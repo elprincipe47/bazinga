@@ -1,6 +1,6 @@
 django==2.1
 django-heroku
 gunicorn
-psycopg2=
+psycopg2
 python-decouple
 dj-database-url
