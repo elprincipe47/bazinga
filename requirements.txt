@@ -4,3 +4,4 @@ gunicorn
 python-decouple
 dj-database-url
 --no-binary psycopg2
+whitenoise
