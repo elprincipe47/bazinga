@@ -23,7 +23,6 @@ def webhook(request):
 
 class OrderList(ListView):
     model = Order
-    fields = '__all__'
 
 
 class OrderDetail(DetailView):
