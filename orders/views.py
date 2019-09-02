@@ -23,10 +23,12 @@ def webhook(request):
 
 class OrderList(ListView):
     model = Order
+    fields = '__all__'
 
 
 class OrderDetail(DetailView):
     model = Order
+    fields = '__all__'
 
 
 class OrderCreate(CreateView):
@@ -35,7 +37,7 @@ class OrderCreate(CreateView):
 
 class OrderUpdate(UpdateView):
     model = Order
-    fields = ['name','email']
+    fields = '__all__'
     success_url = reverse_lazy('order_list')
 
 
